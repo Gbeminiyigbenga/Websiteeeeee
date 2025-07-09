@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: Gbeminiyigbenga/Websiteeeeee
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio Pieces"
+    folder: "_portfolio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Title" }
+      - { name: "genre", label: "Genre" }
+      - { name: "description", label: "Description", widget: "text" }
+      - { name: "link", label: "Read Link", widget: "string" }
